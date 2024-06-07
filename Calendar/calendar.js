@@ -1,5 +1,5 @@
-const front_end_url = "http://127.0.0.1:5500";
-const back_end_url = "http://localhost:3100";
+import { back_end_url, front_end_url } from "../Helper/location_link.js";
+
 const currentDate = document.querySelector(".current-date"),
   daysTag = document.querySelector(".days"),
   prevNextIcon = document.querySelectorAll(".icons span");

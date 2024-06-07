@@ -1,5 +1,7 @@
+import { back_end_url, front_end_url } from "../Helper/location_link.js";
+
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("http://localhost:3100/admin/attractionstable")
+  fetch(back_end_url + "/admin/attractionstable")
     .then((response) => response.json())
     .then((data) => load_attraction_table(data["data"]));
 });
@@ -7,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 let aleart_success = document.getElementById("aleart_success");
 
 function updateTable() {
-  fetch("http://localhost:3100/admin/attractionstable")
+  fetch(back_end_url + "/admin/attractionstable")
     .then((response) => response.json())
     .then((data) => load_attraction_table(data["data"]));
 }
@@ -26,7 +28,7 @@ document
       jsonObject[key] = value;
     });
     // console.log(jsonObject);
-    fetch("http://localhost:3100/admin/insertattraction", {
+    fetch(back_end_url + "/admin/insertattraction", {
       headers: {
         "Content-Type": "application/json",
       },
@@ -128,7 +130,7 @@ function edit_attraction(object) {
       jsonObject.id = id;
       console.log(jsonObject);
       //   console.log(jsonObject);
-      fetch("http://localhost:3100/admin/update_attraction/" + id, {
+      fetch(back_end_url + "/admin/update_attraction/" + id, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -154,7 +156,7 @@ function edit_attraction(object) {
 function deleteAttractionRow(object) {
   let id = object.getAttribute("data-id");
   //   console.log(id);
-  fetch("http://localhost:3100/admin/delete_attraction_row/" + id, {
+  fetch(back_end_url + "/admin/delete_attraction_row/" + id, {
     method: "DELETE",
   })
     .then((response) => response.json())

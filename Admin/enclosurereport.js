@@ -2,8 +2,7 @@
 // show animals in different enclosure when select
 // add trigger to present adding animal when rached capacity
 // add trigger if animal not suppose to be in the wrong exhibit
-const front_end_url = "http://127.0.0.1:5500";
-const back_end_url = "http://localhost:3100";
+import { back_end_url, front_end_url } from "../Helper/location_link.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   let role = window.localStorage.getItem("role");
