@@ -1,4 +1,4 @@
-import { back_end_url, front_end_url } from "../Helper/location_link.js";
+import { back_end_url, front_end_url } from "../Helper/location_link";
 
 let member_ship_options = [];
 
