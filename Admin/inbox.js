@@ -1,4 +1,5 @@
-import { back_end_url, front_end_url } from "../Helper/location_link.js";
+const front_end_url = "https://lepoisson104.github.io";
+const back_end_url = "https://zoo-server-dc4b.onrender.com";
 
 document.addEventListener("DOMContentLoaded", function () {
   fetch(back_end_url + "/admin/load_notification")

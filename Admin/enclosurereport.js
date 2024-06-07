@@ -2,7 +2,8 @@
 // show animals in different enclosure when select
 // add trigger to present adding animal when rached capacity
 // add trigger if animal not suppose to be in the wrong exhibit
-import { back_end_url, front_end_url } from "../Helper/location_link.js";
+const front_end_url = "https://lepoisson104.github.io";
+const back_end_url = "https://zoo-server-dc4b.onrender.com";
 
 document.addEventListener("DOMContentLoaded", function () {
   let role = window.localStorage.getItem("role");

@@ -1,4 +1,5 @@
-import { back_end_url, front_end_url } from "../Helper/location_link";
+const front_end_url = "https://lepoisson104.github.io";
+const back_end_url = "https://zoo-server-dc4b.onrender.com";
 
 const currentDate = document.querySelector(".current-date"),
   daysTag = document.querySelector(".days"),

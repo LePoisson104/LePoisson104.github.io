@@ -1,5 +1,5 @@
-const front_end_url = "http://127.0.0.1:5500";
-const back_end_url = "http://localhost:3100";
+const front_end_url = "https://lepoisson104.github.io";
+const back_end_url = "https://zoo-server-dc4b.onrender.com";
 
 let load_data = [];
 

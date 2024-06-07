@@ -1,4 +1,5 @@
-import { back_end_url, front_end_url } from "../Helper/location_link";
+const front_end_url = "https://lepoisson104.github.io";
+const back_end_url = "https://zoo-server-dc4b.onrender.com";
 
 const wrapper = document.querySelector(".wrapper");
 const loginLink = document.querySelector(".login-link");
@@ -42,7 +43,7 @@ document
           window.localStorage.setItem("customer_id", customer_id);
           if (role === 2)
             window.location.replace(front_end_url + "/Admin/animals.html");
-          else window.location.replace(front_end_url + "/Main/main.html");
+          else window.location.replace(front_end_url + "/index.html");
         });
     } catch (error) {
       document.getElementById("log_error").innerHTML =
