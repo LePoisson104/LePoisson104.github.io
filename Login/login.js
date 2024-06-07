@@ -42,7 +42,7 @@ document
           window.localStorage.setItem("username", username);
           window.localStorage.setItem("customer_id", customer_id);
           if (role === 2)
-            window.location.replace(front_end_url + "/Admin/animals.html");
+            window.location.replace(front_end_url + "/Admin/Animals.html");
           else window.location.replace(front_end_url + "/index.html");
         });
     } catch (error) {
